@@ -1,0 +1,8 @@
+.merchant-bulk-import{padding:16px;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial}
+.bulk-table{width:100%;border-collapse:collapse;margin-top:12px}
+.bulk-table th,.bulk-table td{border:1px solid #e6e6e6;padding:8px;text-align:left}
+.conflict{background:#ffecec}
+.conflict-amount{color:#b30000;font-weight:600}
+.original{font-size:12px;color:#666;margin-top:4px}
+.btn-notify{background:#1976d2;color:#fff;border:none;padding:6px 10px;border-radius:4px;cursor:pointer}
+.conflict-actions{margin-top:12px;display:flex;gap:12px;align-items:center}
