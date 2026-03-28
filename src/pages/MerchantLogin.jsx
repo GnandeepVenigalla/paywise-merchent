@@ -174,7 +174,8 @@ export default function MerchantLogin() {
 
                     <p style={{ textAlign: 'center', color: 'rgba(255,255,255,0.4)', fontSize: '12px', marginTop: '20px', lineHeight: 1.6 }}>
                         Use your Paywise account credentials.<br />
-                        <Link to="/register" style={{ color: '#f59e0b', textDecoration: 'none', fontWeight: 700 }}>Don't have an account?</Link> Sign up as a partner today.
+                        <Link to="/register" style={{ color: '#f59e0b', textDecoration: 'none', fontWeight: 700 }}>Don't have an account?</Link> Sign up as a partner today.<br />
+                        <a href="https://paywiseapp.com" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none', fontWeight: 600, display: 'inline-block', marginTop: '8px' }}>← Go to Paywise App</a>
                     </p>
                 </div>
             </div>

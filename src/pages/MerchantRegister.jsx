@@ -181,8 +181,9 @@ export default function MerchantRegister() {
                         </form>
                     )}
 
-                    <p style={{ textAlign: 'center', color: 'rgba(255,255,255,0.4)', fontSize: '12px', marginTop: '20px' }}>
-                        Already have an account? <Link to="/login" style={{ color: '#f59e0b', textDecoration: 'none', fontWeight: 700 }}>Sign In</Link>
+                    <p style={{ textAlign: 'center', color: 'rgba(255,255,255,0.4)', fontSize: '12px', marginTop: '20px', lineHeight: 1.6 }}>
+                        Already have an account? <Link to="/login" style={{ color: '#f59e0b', textDecoration: 'none', fontWeight: 700 }}>Sign In</Link><br />
+                        <a href="https://paywiseapp.com" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none', fontWeight: 600, display: 'inline-block', marginTop: '8px' }}>← Go to Paywise App</a>
                     </p>
                 </div>
             </div>
