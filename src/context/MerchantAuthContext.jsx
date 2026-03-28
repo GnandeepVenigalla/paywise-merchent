@@ -46,11 +46,7 @@ export const MerchantAuthProvider = ({ children }) => {
     const login = async (email, password) => {
         const res = await api.post('/auth/login', { email, password });
         localStorage.setItem('merchant_token', res.data.token);
-        setUser(res.data.user);
-        try {
-            const mRes = await api.get('/merchant/profile');
-            setMerchant(mRes.data);
-        } catch { setMerchant(null); }
+        await loadUser();
         return res.data;
     };
 
@@ -68,11 +64,7 @@ export const MerchantAuthProvider = ({ children }) => {
     const verifyOtp = async (email, code) => {
         const res = await api.post('/auth/verify-otp', { email, code });
         localStorage.setItem('merchant_token', res.data.token);
-        setUser(res.data.user);
-        try {
-            const mRes = await api.get('/merchant/profile');
-            setMerchant(mRes.data);
-        } catch { setMerchant(null); }
+        await loadUser();
         return res.data;
     };
 
