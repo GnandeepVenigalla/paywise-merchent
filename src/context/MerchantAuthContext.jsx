@@ -62,7 +62,7 @@ export const MerchantAuthProvider = ({ children }) => {
     };
 
     const verifyOtp = async (email, code) => {
-        const res = await api.post('/auth/verify-otp', { email, code });
+        const res = await api.post('/auth/verify-otp', { email, otp: code });
         localStorage.setItem('merchant_token', res.data.token);
         await loadUser();
         return res.data;
